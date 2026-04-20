@@ -1,7 +1,7 @@
 
 // ===== FILE: lib/main.dart =====
 import 'package:flutter/material.dart';
-import 'package:modelhandling/screen/login_screen.dart';
+import 'package:modelhandling/screen/chat_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
  
@@ -9,8 +9,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
-    url: 'https://nyoniznvreaqxquitovn.supabase.co',
-    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im55b25pem52cmVhcXhxdWl0b3ZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ4MTA2MzksImV4cCI6MjA5MDM4NjYzOX0.wluclOAN69JbeUBdjOniajniE-LqI05pakpNawqvmAY'
+    url: 'https://ivqfnvaprilmxyvjkrdh.supabase.co',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml2cWZudmFwcmlsbXh5dmprcmRoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExNzc0NTEsImV4cCI6MjA4Njc1MzQ1MX0.vw0J9JML31wAw4w6h3k4tA0s-uf1sS0mw4z3ZYjgqIs'
     
   );
 
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: LoginPage(),
+      home: ChatPage(username: 'Graceshiel',),
     );
   }
 }
